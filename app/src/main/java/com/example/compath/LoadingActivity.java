@@ -1,7 +1,9 @@
 package com.example.compath;
 
 import android.content.Intent;
+import android.graphics.DrawFilter;
 import android.graphics.Matrix;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ImageView;
@@ -25,7 +27,7 @@ public class LoadingActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent loginIntent = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent loginIntent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(loginIntent);
                 LoadingActivity.this.finish();
 
