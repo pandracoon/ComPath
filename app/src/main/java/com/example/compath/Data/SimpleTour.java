@@ -6,9 +6,9 @@ public class SimpleTour {
 
     private String name, area, uploader;
     private int id;
-    private ArrayList<ArrayList<Spot>> plan;
+    private ArrayList<ArrayList<SimpleSpot>> plan;
 
-    public SimpleTour(String name, String area, String uploader, int id, ArrayList<ArrayList<Spot>> plan) {
+    public SimpleTour(String name, String area, String uploader, int id, ArrayList<ArrayList<SimpleSpot>> plan) {
         this.name = name;
         this.area = area;
         this.uploader = uploader;
@@ -32,7 +32,7 @@ public class SimpleTour {
         return id;
     }
 
-    public ArrayList<ArrayList<Spot>> getPlan() {
+    public ArrayList<ArrayList<SimpleSpot>> getPlan() {
         return plan;
     }
 }
