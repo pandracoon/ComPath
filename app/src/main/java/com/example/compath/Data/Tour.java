@@ -40,4 +40,8 @@ public class Tour {
     public ArrayList<ArrayList<Spot>> getPlan() {
         return plan;
     }
+
+    public int getSizeOfPlan(){
+        return plan.size();
+    }
 }
