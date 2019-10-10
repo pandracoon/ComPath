@@ -29,7 +29,7 @@ public class Navigator {
 
     }
 
-    public void setSelection(int index, int choice){      //옵션 선택
+    public void setSelection(int index, int choice) {      //옵션 선택
         selection[index] = choice;
     }
 
@@ -45,12 +45,12 @@ public class Navigator {
         }
     }
 
-    public boolean isSettingCompleted(){        //사전 준비가 끝났는지 확인
-        if(startDate.isEmpty()){
+    public boolean isSettingCompleted() {        //사전 준비가 끝났는지 확인
+        if (startDate.isEmpty()) {
             return false;
         }
 
-        if(startSpot == null || endSpot == null){
+        if (startSpot == null || endSpot == null) {
             return false;
         }
 
